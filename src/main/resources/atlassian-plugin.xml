@@ -1,0 +1,17 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.artifactId}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+    </plugin-info>
+
+    <resource type="i18n" name="i18n" location="iconic"/>
+    <resource type="download" name="images/" location="images/"/>
+    
+    <web-resource key="iconic-js" name="Atlassian Javascript">
+        <resource type="download" name="replace.js" location="replace.js"/>
+        <context>main</context>
+        <context>admin</context>
+    </web-resource>
+
+</atlassian-plugin>
